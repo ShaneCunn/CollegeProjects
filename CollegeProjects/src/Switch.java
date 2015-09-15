@@ -16,8 +16,8 @@ public class Switch {
 		int score = 95;
 		switch (score )
 		{
-		case 100 :
-		case  95 :
+		case 100 : // this a set of variable to be called once.
+		case 95 :
 		case 90 : 
 			System.out.println("Very Good");
 			break; // break out of the switch statement
