@@ -10,8 +10,12 @@ public class Arrays {
 		 * int[] myintarray = {1,2,3};
 		 * int[] myintarray = new int[]{1,2,3};
 		 */
+		int index = 0;
+		while(index < 5) {
+			System.out.println(myintarray[index]);
+			index++;
+		}
 		
-System.out.println(myintarray[3]);
 	}
 
 }
