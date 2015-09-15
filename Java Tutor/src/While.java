@@ -6,7 +6,7 @@ public class While {
 		
 		int  a = 0;
 		
-		while (a <= 10) // while a is less than one is loops through
+		while (a <= -1) // while a is less than one is loops through
 		{
 			System.out.println(a);
 			a++; // adds +1 to the A counter
@@ -21,7 +21,7 @@ public class While {
 			b++; // adds +1 to the B counter			
 			
 			
-		} while (b <= 10);
+		} while (b <= -1);
 	}
 
 }
