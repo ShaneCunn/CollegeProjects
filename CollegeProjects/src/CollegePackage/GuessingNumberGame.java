@@ -13,7 +13,10 @@ public class GuessingNumberGame {
 		
 		
 		
-		Scanner keyboard = new Scanner(System.in);
+		try (Scanner keyboard = new Scanner(System.in))
+		{
+		
+		
 		int guess;
 		
 		do {
@@ -30,6 +33,9 @@ public class GuessingNumberGame {
 		else if (guess > secretNumber)
 			System.out.println("Your number is larger than the secret number.");
 		} while (guess != secretNumber);
+		
+		
+		}
 		
 		
 		
