@@ -14,14 +14,36 @@ public class GuessingNumberGame {
 		// Declares and creates a scanner object
 		try (Scanner keyboard = new Scanner(System.in)) {
 
-			int guess;
+			int guess = 0;
 			int attempts = 0; // sets attempts variable to zero
+			boolean isNumber;
 
 			do {
 				// get input from user
 				System.out.println("Enter a guess (1-1000): ");
-				guess = keyboard.nextInt();
+				
+				
+				do {
+					if (keyboard.hasNextInt()) {
+						guess = keyboard.nextInt(); // limits input to a integer
+						isNumber = true;
+					}else{
+						
+						System.out.println("This is not a integer"); // 
+						isNumber = false; // flips is number to false
+						keyboard.next();// empty scanner in and asks for a number
+						
+					}
+					
+					
+					
+					
+					
+				} while (!(isNumber));
 				System.out.println("Your guess is " + guess);
+				
+				
+				
 
 				if (guess < secretNumber) // if the number is lower it prints
 											// out
