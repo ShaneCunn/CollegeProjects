@@ -1,3 +1,4 @@
+package CollegePackage;
 import  java.util.Scanner; //import scanner that read in system in
 
 public class Calculator {

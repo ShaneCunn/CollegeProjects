@@ -1,3 +1,4 @@
+package CollegePackage;
 import java.util.Scanner;
 
 

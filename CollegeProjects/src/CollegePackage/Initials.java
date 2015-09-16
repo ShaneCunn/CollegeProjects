@@ -1,3 +1,4 @@
+package CollegePackage;
 
 public class Initials {
 
