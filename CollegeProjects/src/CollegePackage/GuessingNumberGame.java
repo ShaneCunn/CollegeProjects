@@ -5,51 +5,53 @@ import java.util.Scanner;
 public class GuessingNumberGame {
 
 	public static void main(String[] args) {
-		
+
 		// Declares Variables
 		int secretNumber;
-		secretNumber = (int) (Math.random()*1000 + 1);
-		//System.out.println("Secret number is " + secretNumber);
-		
-		
-		//Declares and creates a scanner object
-		try (Scanner keyboard = new Scanner(System.in))
-		{
-		
-		
-		int guess;
-		int attempts = 0;
-		
+		secretNumber = (int) (Math.random() * 1000 + 1);
+		System.out.println("Secret number is " + secretNumber);
+
+		// Declares and creates a scanner object
+		try (Scanner keyboard = new Scanner(System.in)) {
+
+			int guess;
+			int attempts = 0; // sets attempts variable to zero
+
 			do {
 				// get input from user
 				System.out.println("Enter a guess (1-1000): ");
 				guess = keyboard.nextInt();
-				System.out.println("Your guess is " + guess);				
-				
-				
-				if (guess == secretNumber)
-					System.out.println("Your guess is correct, well done");
-				else if (guess < secretNumber)
+				System.out.println("Your guess is " + guess);
+
+				if (guess < secretNumber) // if the number is lower it prints
+											// out
 					System.out.println("Your guess is smaller than the secret number.");
-				else if (guess > secretNumber)
+				if (guess > secretNumber) // if the number is higher it print
+											// out
 					System.out.println("Your number is larger than the secret number.");
-				
-				
+
 				// keeps going till the right number is guessed
-				attempts++;
-				} while (guess != secretNumber && attempts < 7);
-			
-			if(guess == secretNumber){
-				System.out.println("Your guess is correct, well done");				
-				
+
+				attempts++; // adds +1 to the attempts variable
+
+			} while (guess != secretNumber && attempts < 7); // while attempts
+																// is less than
+																// 7 it keeps
+																// looping 7
+																// times and
+																// then exits on
+																// 7 wrong
+																// attempts
+
+			if (guess == secretNumber) {
+				System.out.println("Your guess is correct, well done");
+
+			} else {
+				System.out.println("You tried incorrectly 7 times!!!, The correct number was: " + secretNumber); // i
+
 			}
-			else{
-				System.out.println("You tried incorrectly 7 times!!!");
-				
-			}
-		}	
-		
-		
+		}
+
 	}
 
 }
