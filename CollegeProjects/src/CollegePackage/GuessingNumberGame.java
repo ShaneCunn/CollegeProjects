@@ -8,8 +8,8 @@ public class GuessingNumberGame {
 		
 		
 		int secretNumber;
-		secretNumber = (int) (Math.random()*10);
-		System.out.println("Secert number is " + secretNumber);
+		secretNumber = (int) (Math.random()*1000 + 1);
+		//System.out.println("Secert number is " + secretNumber);
 		
 		
 		
@@ -17,7 +17,7 @@ public class GuessingNumberGame {
 		int guess;
 		
 		do {
-		System.out.println("Enter a guess: ");
+		System.out.println("Enter a guess (1-1000): ");
 		guess = keyboard.nextInt();
 		System.out.println("Your guess is " + guess);
 		
@@ -28,8 +28,9 @@ public class GuessingNumberGame {
 		else if (guess < secretNumber)
 			System.out.println("Your guess is smaller than the secret number.");
 		else if (guess > secretNumber)
-			System.out.println(" Your number is larger than the secret number.");
+			System.out.println("Your number is larger than the secret number.");
 		} while (guess != secretNumber);
+		
 		
 		
 		
