@@ -8,8 +8,8 @@ public class GuessingNumberGame {
 
 		// Declares Variables
 		int secretNumber;
-		secretNumber = (int) (Math.random() * 1000 + 1);
-		System.out.println("Secret number is " + secretNumber);
+		secretNumber = (int) (Math.random() * 1000 + 1); // generates a random number
+		//System.out.println("Secret number is " + secretNumber);
 
 		// Declares and creates a scanner object
 		try (Scanner keyboard = new Scanner(System.in)) {
@@ -20,7 +20,7 @@ public class GuessingNumberGame {
 
 			do {
 				// get input from user
-				System.out.println("Enter a guess (1-1000): ");
+				System.out.print("Enter a guess (1-1000): ");
 				
 				
 				do {
@@ -30,12 +30,11 @@ public class GuessingNumberGame {
 					}else{
 						
 						System.out.println("This is not a integer"); // 
-						isNumber = false; // flips is number to false
+						isNumber = false; // flips isnumber boolean to false
 						keyboard.next();// empty scanner in and asks for a number
 						
 					}
-					
-					
+						
 					
 					
 					
