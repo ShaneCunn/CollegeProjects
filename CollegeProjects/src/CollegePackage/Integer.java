@@ -1,6 +1,6 @@
 package CollegePackage;
 import  java.util.Scanner; //import scanner that read in system in
-public class interger {
+public class Integer {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
