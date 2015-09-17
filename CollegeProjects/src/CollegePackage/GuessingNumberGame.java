@@ -6,6 +6,9 @@ public class GuessingNumberGame {
 
 	public static void main(String[] args) {
 
+		// to do fix comments
+		
+		
 		// Declares Variables
 		int secretNumber;
 		secretNumber = (int) (Math.random() * 1000 + 1); // generates a random
