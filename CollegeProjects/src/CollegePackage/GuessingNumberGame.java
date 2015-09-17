@@ -8,7 +8,7 @@ public class GuessingNumberGame {
 
 		// to do fix comments
 		
-		// test commit
+		// test commit...
 		
 		
 		// Declares Variables
