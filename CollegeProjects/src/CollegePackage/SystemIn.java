@@ -10,12 +10,13 @@ public class SystemIn {
 
 		String newname; // declares new string variable
 
-		Scanner ScanIn = new Scanner(System.in); // create a
-		newname = ScanIn.nextLine();
-		ScanIn.close();
-		System.out.println("Hello " + newname); // adds together newstring and
-												// string variable
-
+		try (Scanner ScanIn = new Scanner(System.in)) { // create a
+			newname = ScanIn.nextLine();
+			ScanIn.close();
+			System.out.println("Hello " + newname); // adds together newstring
+													// and
+													// string variable
+		}
 	}
 
 }
