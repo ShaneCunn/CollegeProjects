@@ -8,8 +8,9 @@ public class GuessingNumberGame {
 
 		// Declares Variables
 		int secretNumber;
-		secretNumber = (int) (Math.random() * 1000 + 1); // generates a random number
-		//System.out.println("Secret number is " + secretNumber);
+		secretNumber = (int) (Math.random() * 1000 + 1); // generates a random
+															// number
+		// System.out.println("Secret number is " + secretNumber);
 
 		// Declares and creates a scanner object
 		try (Scanner keyboard = new Scanner(System.in)) {
@@ -21,28 +22,22 @@ public class GuessingNumberGame {
 			do {
 				// get input from user
 				System.out.print("Enter a guess (1-1000): ");
-				
-				
+
 				do {
 					if (keyboard.hasNextInt()) {
 						guess = keyboard.nextInt(); // limits input to a integer
 						isNumber = true;
-					}else{
-						
-						System.out.println("This is not a integer"); // 
+					} else {
+
+						System.out.println("This is not a integer"); //
 						isNumber = false; // flips isnumber boolean to false
-						keyboard.next();// empty scanner in and asks for a number
-						
+						keyboard.next();// empty scanner in and asks for a
+										// number
+
 					}
-						
-					
-					
-					
+
 				} while (!(isNumber));
 				System.out.println("Your guess is " + guess);
-				
-				
-				
 
 				if (guess < secretNumber) // if the number is lower it prints
 											// out
