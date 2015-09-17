@@ -8,6 +8,8 @@ public class GuessingNumberGame {
 
 		// to do fix comments
 		
+		// test commit
+		
 		
 		// Declares Variables
 		int secretNumber;
