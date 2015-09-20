@@ -1,3 +1,4 @@
+package JavaTutor;
 import java.util.Scanner; //import scanner that read in system in
 
 public class Increments {
