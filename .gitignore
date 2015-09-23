@@ -82,3 +82,7 @@ local.properties
 
 # TeXlipse plugin
 .texlipse
+
+# Java eclipse recommenders
+.recommenders/
+
