@@ -34,7 +34,7 @@ public class ConcertTickets {
 																					// and
 																					// second
 																					// numbers
-			System.out.println("Total Sales: " + answer); // outputs the answer variable to screen
+			System.out.printf("Total Sales: %.2f", answer); // uses print format to limit the output to 2 decimal places
 		}
 
 	}
