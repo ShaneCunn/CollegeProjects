@@ -11,7 +11,7 @@ public class Calculator {
 			fnum = Cal.nextDouble(); // stores first number
 			System.out.println("Enter the second number:");
 			snum = Cal.nextDouble(); // store the second number
-			answer = fnum + snum; // add toget the first and second numbers
+			answer = fnum + snum; // add together the first and second numbers
 			System.out.println(answer); // outputs the answer variable to screen
 		}
 
