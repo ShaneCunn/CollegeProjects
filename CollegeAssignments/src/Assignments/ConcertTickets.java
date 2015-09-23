@@ -34,8 +34,8 @@ public class ConcertTickets {
 																					// and
 																					// second
 																					// numbers
-			System.out.printf("Total Sales: %.2f", answer); // uses print format to limit the output to 2 decimal places
-		}
+			System.out.printf("Total Sales: \u20AC%.2f", answer); // uses print format to limit the output to 2 decimal places
+		}// added a euro symbol
 
 	}
 
