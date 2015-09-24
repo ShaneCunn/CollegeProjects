@@ -85,5 +85,6 @@ local.properties
 
 # Java eclipse recommenders
 .recommenders/
+.recommenders\
 .recommenders/**/*
 
